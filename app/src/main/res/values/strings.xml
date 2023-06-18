@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Chat GPT AI</string>
+    <string name="welcome_to_easy_chatgpt_ntry_it_out_now">Welcome to ChatGPT</string>
+    <string name="write_here">Write here</string>
+    <string name="title">Chat GPT AI</string>
+    <string name="hello_sir">Hello! </string>
+    <string name="hi_cgatgpt">Hi Chat GPT</string>
+    <string name="chatgpt_info">ChatGPT is an artificial intelligence chatbot developed by OpenAI and released in November 2022. The Chat in the name is a reference to it being a chatbot, and the GPT stands for generative pre-trained transformer—a type of large language model.</string>
+</resources>

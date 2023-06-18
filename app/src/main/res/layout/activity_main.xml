@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="@string/title"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
+        tools:listitem="@layout/chat_item" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/welcome_to_easy_chatgpt_ntry_it_out_now"
+        android:textColor="#271C3A"
+        android:textSize="28sp" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/message_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@id/send_btn"
+            android:background="@drawable/rounded_corner"
+            android:hint="@string/write_here"
+            android:padding="16dp" />
+
+        <!--       <ImageButton
+                   android:id="@+id/send_btn"
+                   android:layout_width="48dp"
+                   android:layout_height="48dp"
+                   android:layout_alignParentEnd="true"
+                   android:layout_centerInParent="true"
+                   android:layout_marginStart="10dp"
+                   android:background="?attr/selectableItemBackgroundBorderless"
+                   android:padding="8dp"
+                   android:src="@drawable/ic_baseline_send_24" /> -->
+
+        <ImageButton
+            android:id="@+id/send_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/circle_pink"
+            android:foregroundGravity="center|center_horizontal"
+            android:paddingStart="3dp"
+            android:pointerIcon="cell"
+            android:src="@drawable/ic_baseline_send_24" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
